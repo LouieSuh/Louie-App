@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Firstpagepage from "./Loginpage";
+import Loginpage from "./Loginpage";
+
+function app() {
+  return <loginpage/>
+}
+
+
+// --------------------------------
+import {Router, Rout} from "React-Router-Dom";
+import firstpagee from "./Mainpage";
+import loginpage from "./Mainpage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <mainpage/>
 }
+
+ <Router>
+  <loginpage exact path = "/login" component = />loginpage)
+</Router>
+
 
 export default App;
