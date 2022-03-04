@@ -84,6 +84,7 @@ function Loginpage(){
           </Container>
 
       
+   Button onclick="Loginpage" class="index.js">up</button>
    
 
       export default Loginpage
