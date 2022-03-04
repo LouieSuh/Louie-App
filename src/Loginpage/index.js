@@ -1,4 +1,5 @@
 import styled from "styled component";
+import React from "react";
 
 const WelcomeTitle = style.h1
 fontsize = "100px"
@@ -51,17 +52,25 @@ function Loginpage(){
     backgroundColor = "blue"
 
     
-    Const = Styled.WelcomeTitle = style.h1 {
+    Const = "style.WelcomeTitle = style.h1"
 
-    }
-        height = "300px";
-        width = "300px";
+    
+    
+        height = "300px"
+        width = "300px"
         marginTop = "100px"
     
     
  
 
-  function LoginPage(){
+  function Loginpage
+
+
+      constuser = new States ("  ")
+
+
+      user.id = "user"
+
 
       return(
           <Container>
@@ -74,17 +83,11 @@ function Loginpage(){
               </Leftside>
           </Container>
 
-      );
+      
+   
 
+      export default Loginpage
 
-
-export default Loginpage;
-
-
-    import styled from "App.js"
-        const Button = styled.Button`
-        backgroundColor = "blue"
-        border = "none"
-
+      
 
     

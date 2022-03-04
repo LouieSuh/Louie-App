@@ -9,7 +9,8 @@ function app() {
 
 
 // --------------------------------
-import {Router, Rout} from "React-Router-Dom";
+
+import {BrowserRouter, Rout} from "React-Router-Dom";
 import firstpagee from "./Mainpage";
 import loginpage from "./Mainpage";
 
@@ -17,9 +18,10 @@ function App() {
   return <mainpage/>
 }
 
- <Router>
-  <loginpage exact path = "/login" component = />loginpage)
-</Router>
+
+ <Routes>
+  <loginpage exact path = "/login" component = {loginpage}/>
+</Routes>
 
 
 export default App;
