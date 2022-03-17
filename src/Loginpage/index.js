@@ -28,7 +28,7 @@ backgroundColor = beige
  Flex Items
  */
 
-    const Righttside = styled.h1;
+    const RightSide = style.styled.h1;
     font-size; "100px";
     Color: "blue";
     text-align; center;
@@ -37,7 +37,7 @@ backgroundColor = beige
     backgroundColor: "beige";
 
 
-    const Leftside = styled.h1;
+    const LeftSide = styled.h1;
         font-size; "100px";
         Color: "blue";
         text-align; center;
@@ -47,7 +47,7 @@ backgroundColor = beige
 
 
 
-  function Loginpage() {
+  function LoginPage() {
 
 
       const {user , setUser} = newStates({
@@ -60,8 +60,18 @@ backgroundColor = beige
 
       const navigateToMainPage = (id, password) => {
         history.push("/main");
-        
+        if (id == "" && password == "");
+        alert("ID or Password is Empty");
+        return;
 
+        {
+
+        if(id = "Louie" && password == "Louie");
+        history.push("/main")
+        
+        
+        }
+        
 
     };
     
@@ -78,11 +88,11 @@ backgroundColor = beige
 };
     return(
         <Container>
-            <Leftside>
-                <wlecomeTitle>Welcome</wlecomeTitle>
+            <LeftSide>
+                <welcomeTitle>Welcome</welcomeTitle>
                 <labelWrapper>
                     <Label>ID</Label>
-                    {/* // We are goin gto replace empty string to the following input by the user
+                    {/* // We are going to replace empty string to the following input by the user
                     user * */ }
                     <Input
                     type="text" value={id} name = "id" onChange={putUserInfo}></Input>
@@ -92,14 +102,15 @@ backgroundColor = beige
                     <Input 
                     type = "password" value={password} name = "password" onChange={putUserInfo}></Input>
                 </labelWrapper>
-                <Loginpage onClick={navigateToMainPage}></Loginpage>
-            </Leftside>
+                <LoginPage onClick={navigateToMainPage}></LoginPage>
+            </LeftSide>
             <RightSide></RightSide> 
         </Container>
     )
-    
-    export default Loginpage;
+
 
     
+    export default LoginPage;
 
-    
+
+
