@@ -1,16 +1,7 @@
 import styled from "styled-components"
 import React, {useState} from "react"
 import {useHistory} from "react-router-dom"
-const Wrapper = styled
-function mainpage(){
-    return <h>Main Page Test</h>
-        
-    }
-
-
-    export default Mainpage;
-
-    const Container = styled.div
+const Container = styled.div
     height = flex;
     backgroundColor = red;
     display = "flex"
@@ -31,6 +22,8 @@ function mainpage(){
 
     ;
 
+    
+
     function Main() {
         return(
             <Wrapper>
@@ -45,7 +38,7 @@ function mainpage(){
                     </a>
                 </Right>
             </Wrapper>
-        );
+        )
     }
 
     export default Main();
