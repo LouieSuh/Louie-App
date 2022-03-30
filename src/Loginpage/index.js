@@ -1,116 +1,70 @@
-import styled from "styled component";
-import React from "react";
-import { useHistory } from "react-router-dom";
-
-const WelcomeTitle = style.h1
-fontsize = "100px"
-color = "blue"
-textAlign = "center"
-marginTop = "20px"
-backgroundColor = beige
-
-;
-
-
-
-    const Container = styled.div
+import styled from "styled-components"
+import React, {useState} from "react"
+import {useHistory} from "react-router-dom"
+const Container = styled.div
     height = flex;
     backgroundColor = red;
     display = "flex"
 
     ;
 
-/**
- * 
- //TOD0
- Flex Container
+    const Left = styled.div
+    height = flex;
+    backgroundColor = white;
+    display = "flex"
 
- Flex Items
- */
+    ;
 
-    const RightSide = style.styled.h1;
-    font-size; "100px";
-    Color: "blue";
-    text-align; center;
-    margin-top; "20px";
-    width: "50%";
-    backgroundColor: "beige";
+    const Right = styled.div
+    height = flex;
+    backgroundColor = blue;
+    display = "fixed"
 
-
-    const LeftSide = styled.h1;
-        font-size; "100px";
-        Color: "blue";
-        text-align; center;
-        margin-top; "20px";
-        width: "50%";
-        backgroundColor: "beige";
-
-
-
-  function LoginPage() {
-
-
-      const {user , setUser} = newStates({
-
-      id: "",
-      password: "",
-
-      });
-
-
-      const navigateToMainPage = (id, password) => {
-        history.push("/main");
-        if (id == "" && password == "");
-        alert("ID or Password is Empty");
-        return;
-
-        {
-
-        if(id = "Louie" && password == "Louie");
-        history.push("/main")
-        
-        
-        }
-        
-
-    };
-    
-    // e stands for events
-    const putUserInfo = (e) => {};
-    const { name, value } = e.target.result;
-    console.log(name);
-    console.log(value);
-    setUser ({
-        ...user,
-        [name]: value,
-    });
-    console.log(user);
-};
-    return(
-        <Container>
-            <LeftSide>
-                <welcomeTitle>Welcome</welcomeTitle>
-                <labelWrapper>
-                    <Label>ID</Label>
-                    {/* // We are going to replace empty string to the following input by the user
-                    user * */ }
-                    <Input
-                    type="text" value={id} name = "id" onChange={putUserInfo}></Input>
-                </labelWrapper>
-                <labelWrapper>
-                    <Label>Password</Label>
-                    <Input 
-                    type = "password" value={password} name = "password" onChange={putUserInfo}></Input>
-                </labelWrapper>
-                <LoginPage onClick={navigateToMainPage}></LoginPage>
-            </LeftSide>
-            <RightSide></RightSide> 
-        </Container>
-    )
-
+    ;
 
     
-    export default LoginPage;
+
+    function Main() {
+        return(
+            <Wrapper>
+                <Left>
+                    <h1>Hi, my name is Louie!</h1>
+                </Left>
+                <Right>
+                    <p> A student who is attending BCC since grade 6. 
+                        I am also good at playing sports 
+                        and likes to play games.  </p>
+                    <a href="https://github.com/2023LouieSuh">
+                    </a>
+                </Right>
+            </Wrapper>
+        )
+    }
+
+    function Main2() {
+        return(
+            <Wrapper>
+                <Left>
+                    <h1>About Me</h1>
+                </Left>
+                <Right>
+                    <p> I am a student who is grade 11 in BCC. 
+                        I enjoy playing sports such as Ice Hockey, 
+                        and I like to watch a lot of stuff related to it. </p>
+                    <a href="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/OBZzM6pm_P69pqL8jbcWfBoFu0I=/1440x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/QTAVFA64PVHDPM7IRPH3FTUBIU.jpg" >
+                    </a>
+                    <p2>
+                        I want to major in both biology and computer Science in the future,
+                        and I want to be succesful. 
+                    </p2>
+                </Right>
+            </Wrapper>
+        )
+    }
+
+    export default Main();
+
+    
 
 
 
